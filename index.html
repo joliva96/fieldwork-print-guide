@@ -264,6 +264,22 @@
     font-weight: 700;
   }
 
+  .location {
+    font-size: 12.5px;
+    color: var(--muted);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .location::before {
+    content: "📍";
+    font-size: 11px;
+  }
+
+  .card.national .location { color: rgba(255,255,255,0.7); }
+
   .card.national .copies { color: rgba(255,255,255,0.7); }
   .card.national .copies strong { color: #fff; }
 
@@ -321,6 +337,7 @@
           <p class="desc">Use this for general work orders — any job that isn't a sale, rental, or national account.</p>
           <span class="print-pill">Work Order</span>
           <span class="copies"><strong>2 copies</strong> — one for the customer, one for the store</span>
+          <span class="location">Print from the Work Order section in Method</span>
         </div>
       </div>
     </div>
@@ -338,6 +355,7 @@
           <p class="desc">Anytime a customer has bought something from us — in person or over the phone — and we're delivering it to them.</p>
           <span class="print-pill">Purchase Agreement</span>
           <span class="copies"><strong>2 copies</strong> — one for the customer, one for the store</span>
+          <span class="location">Print from the Sales Receipt section in Method</span>
         </div>
       </div>
     </div>
@@ -355,6 +373,7 @@
           <p class="desc">Anytime a customer has rented something from us — in person or over the phone — and we're delivering it or picking it up.</p>
           <span class="print-pill">Rental Contract</span>
           <span class="copies"><strong>2 copies</strong> — one for the customer, one for the store</span>
+          <span class="location">Print from the Sales Receipt section in Method</span>
         </div>
       </div>
     </div>
